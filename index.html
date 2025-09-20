@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Tony Stark</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #eaeaea;
+      color: #333;
+    }
+
+    /* Header */
+    header {
+      background: #2f3c4f;
+      padding: 20px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header .logo {
+      font-size: 20px;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Hero Section */
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 10%;
+      background: #657080;
+      color: white;
+    }
+
+    .hero img {
+      width: 250px;
+      border-radius: 10px;
+      margin-right: 40px;
+    }
+
+    .hero-content h1 {
+      font-size: 28px;
+      margin: 0;
+    }
+
+    .hero-content p {
+      margin: 15px 0;
+      line-height: 1.5;
+    }
+
+    .hero-content .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      border: 1px solid #fff;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+      margin-top: 10px;
+    }
+
+    .hero-content .btn:hover {
+      background: #fff;
+      color: #2f3c4f;
+    }
+
+    /* Skills Section */
+    .skills {
+      padding: 60px 10%;
+      background: #f8f8f8;
+      text-align: center;
+    }
+
+    .skills h2 {
+      margin-bottom: 40px;
+    }
+
+    .skill-bars {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .skill {
+      text-align: left;
+    }
+
+    .skill-name {
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    .progress {
+      background: #ddd;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+
+    .progress div {
+      height: 10px;
+      background: #f9b233;
+    }
+
+    /* Portfolio Section */
+    .portfolio {
+      padding: 60px 10%;
+      background: #657080;
+      color: white;
+      text-align: center;
+    }
+
+    .portfolio h2 {
+      margin-bottom: 10px;
+    }
+
+    .portfolio p {
+      margin-bottom: 30px;
+    }
+
+    .categories button {
+      margin: 5px;
+      padding: 8px 15px;
+      border: 1px solid #fff;
+      background: transparent;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    .categories button:hover {
+      background: #fff;
+      color: #2f3c4f;
+    }
+
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 40px;
+    }
+
+    .portfolio-grid img {
+      width: 100%;
+      border-radius: 8px;
+      transition: transform 0.3s;
+    }
+
+    .portfolio-grid img:hover {
+      transform: scale(1.05);
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .hero img {
+        margin: 0 0 20px 0;
+      }
+
+      .skill-bars {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">Tony Stark</div>
+    <nav>
+      <a href="#">About</a>
+      <a href="#">Skills</a>
+      <a href="#">Portfolio</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <img src="https://i.pravatar.cc/250" alt="Tony Stark">
+    <div class="hero-content">
+      <h1>Hello!</h1>
+      <p>I'm <b>Tony Stark</b>, living in <b>Malibu, USA</b>.  
+      I design and manage websites for <b>9 years</b>.  
+      Skilled in Javascript, HTML, and CSS.  
+      Had the chance to work for Google and Avengers HQ.</p>
+      <a href="#" class="btn">Creative CV</a>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="skills">
+    <h2>Skills Set</h2>
+    <div class="skill-bars">
+      <div class="skill">
+        <div class="skill-name">HTML</div>
+        <div class="progress"><div style="width: 90%"></div></div>
+      </div>
+      <div class="skill">
+        <div class="skill-name">CSS</div>
+        <div class="progress"><div style="width: 85%"></div></div>
+      </div>
+      <div class="skill">
+        <div class="skill-name">JavaScript</div>
+        <div class="progress"><div style="width: 80%"></div></div>
+      </div>
+      <div class="skill">
+        <div class="skill-name">React</div>
+        <div class="progress"><div style="width: 70%"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section class="portfolio">
+    <h2>Portfolio</h2>
+    <p>Check out my latest works</p>
+    <div class="categories">
+      <button>All</button>
+      <button>Branding</button>
+      <button>UI</button>
+      <button>Illustration</button>
+    </div>
+    <div class="portfolio-grid">
+      <img src="https://source.unsplash.com/400x300/?laptop" alt="work1">
+      <img src="https://source.unsplash.com/400x300/?app" alt="work2">
+      <img src="https://source.unsplash.com/400x300/?design" alt="work3">
+      <img src="https://source.unsplash.com/400x300/?technology" alt="work4">
+    </div>
+  </section>
+
+</body>
+</html>
