@@ -6,9 +6,9 @@
 | Hafiz Ramadhan | 5027241096|
 | Naruna Vicranthyo Putra Gangga | 5027241105|
 
-#max 5 wdc
+### #max 5 wdc
 
-# Dokum
+# Dokumentasi
 
 ## Bagian Header dari landing page
 
