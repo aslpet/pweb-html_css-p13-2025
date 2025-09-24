@@ -189,8 +189,8 @@
       transform: translateY(-2px);
     }
 
-    /* Hero Section */
-    .hero {
+    /* Porto Section */
+    .porto {
       display: grid;
       grid-template-columns: 1fr 1fr;
       align-items: center;
@@ -201,7 +201,7 @@
       overflow: hidden;
     }
 
-    .hero::before {
+    .porto::before {
       content: '';
       position: absolute;
       top: 0;
@@ -211,13 +211,13 @@
       background: rgba(255, 255, 255, 0.05);
     }
 
-    .hero-image {
+    .porto-image {
       text-align: center;
       z-index: 2;
       position: relative;
     }
 
-    .hero-profile {
+    .porto-profile {
       width: clamp(250px, 40vw, 350px);
       height: clamp(250px, 40vw, 350px);
       border-radius: var(--radius-circle);
@@ -226,31 +226,31 @@
       object-fit: cover;
     }
 
-    .hero-profile:hover {
+    .porto-profile:hover {
       transform: scale(1.05);
       box-shadow: var(--hover);
     }
 
-    .hero-content {
+    .porto-content {
       z-index: 2;
       position: relative;
     }
 
-    .hero-title {
+    .porto-title {
       font-family: var(--font-display);
       margin-bottom: 1rem;
       font-weight: bold;
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     }
 
-    .hero-subtitle {
+    .porto-subtitle {
       font-family: var(--font-display);
       color: var(--secondary-gold);
       margin-bottom: 1rem;
       font-weight: 300;
     }
 
-    .hero-description {
+    .porto-description {
       margin: 1.25rem 0;
       line-height: 1.8;
     }
@@ -537,7 +537,6 @@
       text-decoration: none;
       color: var(--white);
       transition: all var(--transition-fast);
-      backdrop-filter: blur(10px);
     }
 
     .social-link:hover {
@@ -548,7 +547,7 @@
 
     /* Responsive Design */
     @media (max-width: 1024px) {
-      .hero {
+      .porto {
         grid-template-columns: 1fr;
         text-align: center;
         gap: var(--gap-xl);
@@ -599,7 +598,7 @@
         min-height: 45px;
       }
 
-      .hero {
+      .porto {
         padding: var(--gap-lg) 5%;
         gap: var(--gap-lg);
       }
@@ -634,7 +633,7 @@
         font-size: 0.85rem;
       }
 
-      .hero {
+      .porto {
         padding: 1.5rem 5%;
       }
 
@@ -666,18 +665,18 @@
     </nav>
   </header>
 
-  <section class="hero gradient-primary p-section" id="about">
-    <div class="hero-image">
-      <img src="assets\Max_Verstappen_Pfp2.jpg" alt="Max Verstappen" class="hero-profile shadow-lg">
+  <section class="porto gradient-primary p-section" id="about">
+    <div class="porto-image">
+      <img src="assets\Max_Verstappen_Pfp2.jpg" alt="Max Verstappen" class="porto-profile shadow-lg">
     </div>
-    <div class="hero-content">
-      <h1 class="hero-title text-3xl">Max Verstappen</h1>
-      <div class="hero-subtitle text-lg">Formula 1 World Champion</div>
-      <p class="hero-description text-base">Three-time <strong>Formula 1 World Champion</strong> from the <strong>Netherlands</strong>.
+    <div class="porto-content">
+      <h1 class="porto-title text-3xl">Max Verstappen</h1>
+      <div class="porto-subtitle text-lg">Formula 1 World Champion</div>
+      <p class="porto-description text-base"><strong>Four-time Formula 1 World Champion</strong> from the <strong>Netherlands</strong>.
       Racing for <strong>Red Bull Racing</strong> since 2016.
       Known for aggressive driving style and exceptional racecraft.
       The youngest race winner in F1 history at age 18.</p>
-      <a href="cv.html" class="btn-base btn-primary text-sm">View Creative CV</a>
+      <a href="cv.html" target="_blank" class="btn-base btn-primary text-sm">View Creative CV</a>
     </div>
   </section>
 
@@ -710,7 +709,7 @@
         <div class="stat-sublabel text-sm">Lap Records</div>
       </div>
       <div class="stat-item shadow-sm">
-        <div class="stat-number text-4xl">3</div>
+        <div class="stat-number text-4xl">4</div>
         <div class="stat-label text-base">World Championships</div>
         <div class="stat-sublabel text-sm">Ultimate Achievement</div>
       </div>
@@ -857,13 +856,12 @@
     <h2 class="contact-title text-2xl mb-sm">Follow the Journey</h2>
     <p class="contact-description text-base mb-lg">Stay updated with Max's racing career and behind-the-scenes content</p>
     <div class="social-links mb-lg">
-      
-      <a href="https://www.instagram.com/maxverstappen1/?hl=en" class="social-link flex-center" title="instagram.com/maxverstappen1">📸</a>
-      <a href="https://twitter.com/maxverstappen1" class="social-link flex-center" title="twitter.com/maxverstappen1">🐦</a>
-      <a href="https://www.twitch.tv/maxverstappen" class="social-link flex-center" title="twitch.tv/maxverstappen">📺</a>
-      <a href="https://www.tiktok.com/@maxv1stappen_?lang=en" class="social-link flex-center" title="tiktok.com/@maxv1stappen">🎵</a>
+      <a href="https://www.instagram.com/maxverstappen1/?hl=en" target="_blank" class="social-link flex-center" title="instagram.com/maxverstappen1">📸</a>
+      <a href="https://twitter.com/max33verstappen" target="_blank" class="social-link flex-center" title="twitter.com/maxverstappen1">🐦</a>
+      <a href="https://www.twitch.tv/maxverstappen" target="_blank" class="social-link flex-center" title="twitch.tv/maxverstappen">📺</a>
+      <a href="https://www.tiktok.com/@maxv1stappen_?lang=en" target="_blank" class="social-link flex-center" title="tiktok.com/@maxv1stappen">🎵</a>
     </div>
-    <a href="cv.html" class="btn-base btn-secondary text-base">View Creative CV</a>
+    <a href="cv.html" target="_blank" class="btn-base btn-secondary text-base">View Creative CV</a>
   </section>
 
 </body>
